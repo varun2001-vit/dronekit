@@ -111,10 +111,10 @@ def keyboard():
                     send_ned_velocity(0,0,gnd_speed,4)
                 elif event.key == pygame.K_a:               #A button=yaw left
                     print(" yaw left")
-                    condition_yaw(5,300,1)
+                    condition_yaw(300,1)
                 elif event.key == pygame.K_d:              #D button=yaw right
                     print("start yaw right")
-                    condition_yaw(5,60,1)
+                    condition_yaw(60,1)
             
 
     ###WHEN THE KEY IS RELEASED
@@ -139,10 +139,10 @@ def keyboard():
                     send_ned_velocity(0,0,0,1)
                 elif event.key == pygame.K_a:               #A button=yaw left
                     print("STOP yaw left")
-                    condition_yaw(5,0,1)
+                    condition_yaw(0,1)
                 elif event.key == pygame.K_d:              #D button=yaw right
                     print("STOP yaw right")
-                    condition_yaw(5,0,1)
+                    condition_yaw(0,1)
                 
 
            
