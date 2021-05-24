@@ -4,7 +4,7 @@ import  time
 from pymavlink import mavutil
 pygame.init()
 win=pygame.display.set_mode((500,500))
-pygame.display.set_caption("first game")
+pygame.display.set_caption("dronekit")
 
 
 print('Connecting to vehicle on: "udp:127.0.0.1:14550" ')
@@ -67,7 +67,7 @@ def condition_yaw(heading, relative=False):
         is_relative=1 #yaw relative to direction of travel
     else:
         is_relative=0 #yaw is an absolute angle
-    # create the CONDITION_YAW command using command_long_encode()
+    
     msg = vehicle.message_factory.command_long_encode(
         0, 0,    # target system, target component
         mavutil.mavlink.MAV_CMD_CONDITION_YAW, #command
